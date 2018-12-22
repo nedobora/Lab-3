@@ -1,0 +1,272 @@
+*{  margin: 0;
+	padding: 0;
+	text-decoration: none; 
+	list-style: none;
+}
+
+body {
+    /* width: 75%;
+	margin: auto; */
+	background: url(../new/images/futbol-fon.jpg) no-repeat center center fixed;
+	background-size: cover; 
+}
+.wrap{
+	min-height: calc(100vh - 120px);
+}
+header {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	background: gray;
+	margin-bottom: 20px;
+}
+
+.content_1{
+	display: flex;
+    margin: 0 auto;
+}
+
+.logo img{
+	height: 100px;
+	display: inline-block;
+	margin: 15px;
+}
+
+#menu {
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	font-family: 'Raleway', sans-serif;
+}
+
+header .menu li a:hover{
+	background: blue;
+	color: white;
+}
+
+#menu nav li{
+	padding: 0 23px 0 0;
+}
+
+.menu {
+	display: flex;
+	position: absolute;
+	bottom: 39%;
+	right: 5%;
+}
+
+
+
+main{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+
+	text-align: justify;
+	overflow: hidden;
+	flex: 1 0 auto;
+	position: relative;
+}
+.wraper{
+	background: #E6E6FA;
+	/*min-height: calc(100vh - 60px);*/
+
+}
+
+
+.content{
+	
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+	text-align: justify;
+	background: #E6E6FA;
+}
+
+h1{
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+}
+
+p{
+	padding: 15px;
+	margin: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-indent: 2em;
+	padding-right: 15px;
+}
+
+.onePhoto img{
+	width: 30%;
+	float:left; /* Выравнивание по левому краю */
+	margin: 7px 7px 7px 0;
+	padding: 25px 15px 5px 15px;
+}
+
+.twoPhoto img{
+	width: 30%;
+	float:right; /* Выравнивание по правому краю */
+	margin: 7px 0 7px 7px;
+	padding: 15px 15px 5px 15px;
+}
+
+
+
+footer{
+	width: 80%;
+	height: 140px;
+	background: grey;
+	margin-right: auto;
+	margin-left: auto;	
+
+}
+
+.footer_row>*, .footer_section_menu nav{
+	float: left;
+	margin-right: 60px;
+
+}
+
+.footer_section_contacts{
+	display: inline;
+
+}
+
+footer nav li{
+	margin: 0px 40px 0 50px;
+	
+	list-style-type: none;
+
+}
+
+.footer_section_menu nav li a{
+	
+	text-decoration: none;	
+	color: white;
+
+}
+footer nav li :hover{
+	background: black;
+}
+/* nav a:hover {
+    border-bottom: 2px solid black;
+}
+*/
+
+
+@media(max-width: 1200px){
+	header{
+ 		width: 90%;
+ 	}
+ 	main{
+ 		width: 90%;
+ 	}
+ 	footer{
+ 		width: 90% ;
+ 		
+ 	}
+
+	footer .logo img{
+		margin-right:  10px;
+
+	}
+
+	.name{
+		margin-left: -100px;
+		margin-left: 0px;
+		font-size: 40px; 
+	}
+   header nav li  {
+	   font-size: 15px;
+   /*	padding: 10px 2px 10px 2px;*/
+   }
+
+   .footer_section_menu nav li{
+	   margin: 0px 25px 0 2px ;
+   }
+
+   footer nav li{
+	   margin: 0px;
+   /*	list-style-type: none;*/
+
+   }
+   .footer_row>*, .footer_section_menu nav{
+		float: left;
+		margin-right: 50px;
+   }
+   #menu{
+	   top: 50px;
+	   left: 50px;
+   }
+   /* .logo img{
+	 
+   }
+	 */
+
+	
+
+}
+ @media (max-width: 524px){
+	header{
+		width: 100%;
+	}
+	main{
+		width: 100%;
+	}
+	footer{
+		width: 100% ;
+		height: 152px;
+		
+	}
+	.onePhoto img{
+		width: 100%;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+		
+	}
+	.twoPhoto img{
+		width: 100%;
+		text-align: center;
+	}
+	.footer_section_menu nav li{
+		
+		margin: 0px 25px 0 2px ;
+
+	}
+	footer nav li{
+		margin: 0px;
+	/*	list-style-type: none;*/
+
+	}
+	.footer_row>*, .footer_section_menu nav{
+	float: left;
+	margin-right: 0px;
+
+	
+	}
+	p{
+		padding: 20px 30px 0 0 ;
+	}
+	.menu{
+		display: block;
+		right: 0;
+		bottom: 0;
+		float: right;
+		padding: 5px;
+	}
+	#menu{
+		top: 0px;
+		right: 50px;
+		left: 0px;
+	}
+	.menu nav li{
+		padding: 0;
+	}
+	.footer_section_contacts{
+		top: 255px;
+		bottom: 50px;
+	}
+	
+}
+	
